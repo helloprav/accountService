@@ -1,0 +1,30 @@
+spring:
+  application:
+     name: accounts-service
+     
+  datasource:
+    url: jdbc:postgresql://localhost/micro
+    username: postgres
+    password: root
+  jpa:
+    generate-ddl: true
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value} 
+   
+  client:    
+    serviceUrl:
+      defaultZone: http://localhost:5002/eureka
+    
+server:
+  port: 0 
+  
+logging:
+  level: 
+    httpclient.wire: DEBUG 
+    
+    
+  
+ 
+ 
+  
