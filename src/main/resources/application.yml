@@ -3,9 +3,9 @@ spring:
      name: accounts-service
      
   datasource:
-    url: jdbc:postgresql://localhost/micro
-    username: postgres
-    password: root
+    url: postgres://gxnxiopdsnoqsb:c3f3971858491cb25896a8ab0bf5d00b5f51001977581abd67b0028c4eb2df11@ec2-54-243-137-182.compute-1.amazonaws.com:5432/d5173sl39gerqo
+    username: gxnxiopdsnoqsb
+    password: c3f3971858491cb25896a8ab0bf5d00b5f51001977581abd67b0028c4eb2df11
   jpa:
     generate-ddl: true
 eureka:
